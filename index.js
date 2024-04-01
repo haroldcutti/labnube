@@ -15,7 +15,7 @@ app.get('/productos', (req, res) => {
     res.json(producto);
 });
 
-const PORT = 5000;
+const PORT = 11100;
 app.listen(PORT, () =>{
     console.log('Se ejecuta la aplicación')
 });
