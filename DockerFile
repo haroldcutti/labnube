@@ -1,0 +1,7 @@
+FROM node
+ LABEL maintainer harold.cutti@tecsup.edu.pe
+ RUN git clone -q https://github.com/haroldcutti/labnube.git
+ WORKDIR hola-express
+ RUN npm install > /dev/null
+ EXPOSE 11199
+ CMD ["npm","start"]
